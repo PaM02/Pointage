@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LispEntre">
+    <TextView
+        android:id="@+id/textViewPen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@color/colorhead"
+        android:text="liste des présents"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textViewPen2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/textViewPen"
+        android:layout_marginTop="20dp"
+        android:text="dans l'entreprise"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/buttonValiderPen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/textViewPen2"
+        android:layout_marginTop="20dp"
+
+        android:layout_weight="1"
+        android:background="@drawable/custom_button"
+        android:text="actualiser" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonValiderPen"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Si vous voulez connaitre le nombre de personnes qui figurent sur la liste des présents,cliquez sur l'un des éléments de la liste ci dessous" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/shop_list_view"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="20dp"
+        android:layout_height="match_parent" />
+
+
+</RelativeLayout>
